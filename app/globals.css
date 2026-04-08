@@ -1,20 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  color-scheme: dark;
-}
+@import "tailwindcss";
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background: #020817;
-}
-
-a {
-  text-decoration: none;
+  background: #030816;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }

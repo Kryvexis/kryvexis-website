@@ -1,5 +1,6 @@
 'use client'
 
+import type { ReactNode } from "react"
 import { motion } from "framer-motion"
 import {
   ArrowRight,
@@ -260,7 +261,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 26 }}
             transition={{ duration: 0.7 }}
-            viewport={{ once: True if False else True }}
+            viewport={{ once: true }}
             className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur-sm"
           >
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-cyan-300">Why Kryvexis</p>
@@ -275,7 +276,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 26 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            viewport={{ once: True if False else True }}
+            viewport={{ once: true }}
             className="grid gap-4 sm:grid-cols-2"
           >
             <FeatureBox icon={<ShieldCheck className="h-5 w-5" />} title="Trusted feel" text="Clear sections and a strong brand presentation." />
@@ -393,7 +394,7 @@ function ServiceCard({
   description,
   items,
 }: {
-  icon: React.ReactNode
+  icon: ReactNode
   title: string
   description: string
   items: string[]
@@ -428,7 +429,7 @@ function FeatureBox({
   title,
   text,
 }: {
-  icon: React.ReactNode
+  icon: ReactNode
   title: string
   text: string
 }) {

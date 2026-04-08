@@ -1,0 +1,6 @@
+Install this after creating the Next.js app:
+
+npm install framer-motion lucide-react
+
+Optional later:
+npm install lenis gsap
